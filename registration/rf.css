@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+body{
+    background-image: url("back1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+h5{
+   margin-top: 8%;
+   text-align: center;
+    font-size: 40px;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2em;
+}
+
+.registrationcontainer{
+    font-weight: 800;
+    justify-self: center;
+    width: 30%;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1em;
+    font-size: 18px;
+    background-color: transparent;
+    background-blend-mode: soft-light,screen;
+    border: 1px solid;
+    padding: 12px;
+    box-shadow: 9px 10px 8px black;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-top: 3%;
+}
+
+.registrationcontainer input{
+    padding:0.5em;
+    outline:none;
+    font-weight: 700;
+}
+
+.submit{
+    width:35%;
+    padding:0.5em;
+    color: black;
+    font-weight: 500;
+    justify-self: center;
+    border-radius: 15px;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+.Reset{
+    width:35%;
+    padding:0.4em;
+    color: black;
+    font-weight: 500;
+    justify-self: center;
+    border-radius: 15px;
+    margin-right: 19px;
+    margin-left: 19px;
+}
+.output{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap:0.7em;
+    justify-items: left;
+}
+.addData{
+    text-align: left;
+    width:auto;
+    height:auto;
+    background-color: rgb(80, 82, 81);
+    border-radius: 16px;
+    background-blend-mode: soft-light,screen;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: transparent;
+}
+
+.output .addData img{
+    width:150px;
+    height:150px;
+    
+}
+
+@media all and (max-width:900px){
+    .output{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0.5em;
+        justify-items: left;
+        
+    }
+
+}
+@media all and (max-width:400px){
+    .container{
+        padding:0.4em;
+    }
+    .registrationcontainer{
+        padding:0.5em;
+    }
+    .output{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:0.5em;
+        justify-items: left;
+    }
+}
